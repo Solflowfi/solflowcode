@@ -57,6 +57,17 @@ export function Navbar() {
         </div>
         <div className="flex items-center gap-3">
           <span className="hidden sm:inline badge">{connection.rpcEndpoint.includes('devnet') ? 'DEVNET' : 'MAINNET'}</span>
+          <a
+            href="https://x.com/solflowfi"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="SOLFLOW on X (Twitter)"
+            className="hidden sm:flex items-center justify-center h-8 w-8 rounded-lg text-[var(--muted)] hover:text-[var(--text)] hover:bg-white/5 transition-colors no-underline"
+          >
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true">
+              <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+            </svg>
+          </a>
           {connected && addr ? (
             <div className="relative">
               <button className="btn btn-secondary btn-sm" onClick={() => setDropOpen((v) => !v)}>
