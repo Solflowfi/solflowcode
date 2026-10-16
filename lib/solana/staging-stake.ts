@@ -6,12 +6,17 @@
 //
 // Instruction account orders mirror programs/solflow-staging/src/lib.rs.
 import { Connection, PublicKey, SystemProgram, Transaction, TransactionInstruction } from '@solana/web3.js';
-import { createHash } from 'node:crypto';
+// Browser-safe SHA-256 (@noble/hashes is the audited implementation already used
+// across the Solana dependency tree). Webpack cannot resolve the `node:crypto`
+// scheme in client bundles, so the discriminator helper below hashes with the
+// identical algorithm from @noble/hashes — the output bytes are the same.
+import { sha256 } from '@noble/hashes/sha2.js';
 
 export const TOKEN_PROGRAM_CLASSIC = 'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA';
 export const TOKEN_PROGRAM_2022 = 'TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb';
 
-const disc = (name: string): Buffer => createHash('sha256').update(name).digest().subarray(0, 8);
+const disc = (name: string): Buffer =>
+  Buffer.from(sha256(new TextEncoder().encode(name)).subarray(0, 8));
 const u64le = (n: bigint): Buffer => {
   const b = Buffer.alloc(8);
   let x = n;
