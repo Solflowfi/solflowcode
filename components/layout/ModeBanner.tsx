@@ -66,11 +66,10 @@ export function ModeBanner() {
   }
 
   if (infra && !infra.liveReady) {
-    return (
-      <div className="bg-red-500/10 border-b border-red-500/30 text-red-300 text-xs font-semibold tracking-wide text-center py-2 px-4">
-        MAINNET PRODUCTION — CONFIGURATION INCOMPLETE. Missing: {infra.missing.join(' · ') || 'unknown components'}. Live data will show as unavailable until verified.
-      </div>
-    );
+    // Operator request: the red "CONFIGURATION INCOMPLETE" banner is hidden.
+    // Live data remains blocked by the data layer (never fabricated); only the
+    // banner display is suppressed.
+    return null;
   }
 
   return (
