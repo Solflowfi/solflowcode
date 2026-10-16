@@ -1,0 +1,35 @@
+node_modules
+.next
+out
+.env
+.env.local
+.env.production
+*.log
+next-env.d.ts
+tsconfig.tsbuildinfo
+.vercel
+.env*
+.devnet
+target
+Cargo.lock.bak
+!.env.example
+!.env.launch-mainnet.example
+
+# ── Security hardening (defense in depth) ──────────────────────
+# Wallet keypairs, signing credentials, and secret material must never be
+# committed, regardless of location:
+*keypair*.json
+*funder*.json
+*deployer*.json
+*secret*.json
+*-sec.json
+authority*.json
+program.json
+id.json
+*.pem
+*.key
+.wallet/
+.aptos/
+# Scratch/debug artifacts
+*.tmp
+

@@ -1,0 +1,38 @@
+[toolchain]
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.devnet]
+solflow = "DzWRKvCg5xZuaYSb1W2Dau4UUWPqGUohWWAxheMnuQyQ"
+solflow-staging = "s4VqR5ayvD3PALEiBFTdMBEdy6beN9YtNesG3BsBBFW"
+
+[programs.mainnet]
+solflow = "DzWRKvCg5xZuaYSb1W2Dau4UUWPqGUohWWAxheMnuQyQ"
+# MAINNET STAGING ($TST): separate keypair + ID; deploy is an explicit
+# operator action only (never automatic):
+#   anchor build --program-name solflow-staging
+#   anchor deploy --program-name solflow-staging \
+#     --program-keypair programs/solflow-staging/target/deploy/solflow-staging-keypair.json
+solflow-staging = "s4VqR5ayvD3PALEiBFTdMBEdy6beN9YtNesG3BsBBFW"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Devnet"
+wallet = ".devnet/authority.json"
+
+# MAINNET LAUNCH (operator action only — never automatic):
+#   1. cluster = "Mainnet"  + wallet = <operator keypair path on their machine>
+#   2. anchor build && anchor deploy --program-keypair target/deploy/solflow-keypair.json
+#   3. initialize(creator_payout=GPsL…4DRS, treasury=8VAg…dCGv)
+#   4. init_sol_asset / init_spl_asset / init_fee_source / set_allocation
+#   5. set NEXT_PUBLIC_FLOW_MINT=<official mint> -> init_flow_staking
+# See scripts/mainnet-init.mjs and .env.launch-mainnet.example.
+
+[test]
+startup_wait = 5000
+shutdown_wait = 2000
+upgradeable = false

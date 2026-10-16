@@ -1,0 +1,24 @@
+# Never upload local environment files or secrets to Vercel
+.env
+.env.*
+!.env.example
+*.env
+*.pem
+*.key
+secrets*
+
+# Build artifacts and dependencies (Vercel builds these on its servers)
+node_modules
+.next
+.vercel
+
+# Local-only artifacts (audit scripts, logs, Rust build output) — not needed
+# for the Next.js preview build and must never be uploaded.
+.devnet
+.mainnet
+programs/solflow/target
+programs/solflow/.anchor
+**/*.so
+/*_out*.txt
+scratch_page*.txt
+page_v*.txt

@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="headline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9945FF"/>
+      <stop offset="1" stop-color="#14F195"/>
+    </linearGradient>
+    <linearGradient id="flowline" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9945FF"/>
+      <stop offset="1" stop-color="#00D1FF"/>
+    </linearGradient>
+    <linearGradient id="divider" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9945FF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#14F195" stop-opacity="0.25"/>
+    </linearGradient>
+    <radialGradient id="glowCyan" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#00D1FF" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#00D1FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowPurple" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#9945FF" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#9945FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowGreen" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#14F195" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#14F195" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="44" height="44" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#FFFFFF" opacity="0.05"/>
+    </pattern>
+    <clipPath id="bar1clip"><rect x="110" y="694" width="670" height="28" rx="14"/></clipPath>
+    <clipPath id="bar2clip"><rect x="110" y="786" width="670" height="28" rx="14"/></clipPath>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#0B0F1E"/>
+  <rect width="1920" height="1080" fill="url(#dots)"/>
+  <circle cx="1250" cy="400" r="520" fill="url(#glowCyan)"/>
+  <circle cx="260" cy="920" r="620" fill="url(#glowPurple)"/>
+  <circle cx="1090" cy="800" r="320" fill="url(#glowGreen)"/>
+  <circle cx="1820" cy="90" r="420" fill="url(#glowPurple)"/>
+  <circle cx="1820" cy="1030" r="380" fill="url(#glowGreen)"/>
+
+  <g stroke="#7E879B" stroke-opacity="0.14" stroke-width="1.5" fill="none">
+    <path d="M 60 250 H 300 L 340 290 H 560"/>
+    <path d="M 60 640 H 220 L 260 600 H 480"/>
+    <path d="M 900 120 H 1150 L 1190 160 H 1420"/>
+    <path d="M 940 1010 H 1180 L 1220 970 H 1500"/>
+    <path d="M 1660 300 H 1860"/>
+    <path d="M 700 960 H 860 L 900 1000 H 1060"/>
+  </g>
+  <g fill="#14F195" opacity="0.35">
+    <circle cx="560" cy="290" r="3.5"/>
+    <circle cx="480" cy="600" r="3.5"/>
+    <circle cx="1420" cy="160" r="3.5"/>
+    <circle cx="1060" cy="1000" r="3.5"/>
+    <circle cx="1860" cy="300" r="3.5"/>
+  </g>
+
+  <image href="{{ICON}}" x="110" y="118" width="92" height="92"/>
+  <image href="{{WORDMARK}}" x="228" y="135" width="{{WMW}}" height="{{WMH}}"/>
+
+  <text x="110" y="352" font-family="Segoe UI, Arial, sans-serif" font-size="46" font-weight="700"
+        letter-spacing="7" fill="url(#headline)">STAKE INTO THE FLOW</text>
+  <rect x="110" y="378" width="670" height="3" rx="1.5" fill="url(#divider)"/>
+  <text x="110" y="432" font-family="Segoe UI, Arial, sans-serif" font-size="25" letter-spacing="2.5"
+        fill="#7E879B">CREATOR FEES &#8594; SOL + NVDAX REWARDS</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="15" letter-spacing="2">
+    <rect x="110" y="484" width="352" height="36" rx="18" fill="#FFFFFF" fill-opacity="0.04" stroke="#7E879B" stroke-opacity="0.35"/>
+    <circle cx="132" cy="502" r="3.5" fill="#14F195"/>
+    <text x="148" y="508" fill="#C7D0DE">PROGRAM-DERIVED REWARD VAULTS</text>
+    <rect x="110" y="534" width="228" height="36" rx="18" fill="#FFFFFF" fill-opacity="0.04" stroke="#7E879B" stroke-opacity="0.35"/>
+    <circle cx="132" cy="552" r="3.5" fill="#9945FF"/>
+    <text x="148" y="558" fill="#C7D0DE">TOKEN-2022 SUPPORT</text>
+    <rect x="110" y="584" width="212" height="36" rx="18" fill="#FFFFFF" fill-opacity="0.04" stroke="#7E879B" stroke-opacity="0.35"/>
+    <circle cx="132" cy="602" r="3.5" fill="#00D1FF"/>
+    <text x="148" y="608" fill="#C7D0DE">JUPITER ROUTING</text>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="110" y="676" font-size="16" letter-spacing="3" fill="#7E879B">CREATOR FEE SPLIT</text>
+    <g clip-path="url(#bar1clip)">
+      <rect x="110" y="694" width="469" height="28" fill="#9945FF"/>
+      <rect x="579" y="694" width="201" height="28" fill="#00D1FF"/>
+    </g>
+    <text x="126" y="713" font-size="14" font-weight="600" letter-spacing="1" fill="#FFFFFF">CREATOR &#183; 70%</text>
+    <text x="594" y="713" font-size="14" font-weight="600" letter-spacing="1" fill="#04121C">REWARD POOL &#183; 30%</text>
+
+    <text x="110" y="768" font-size="16" letter-spacing="3" fill="#7E879B">REWARD POOL ALLOCATION</text>
+    <g clip-path="url(#bar2clip)">
+      <rect x="110" y="786" width="469" height="28" fill="#00D1FF"/>
+      <rect x="579" y="786" width="201" height="28" fill="#14F195"/>
+    </g>
+    <text x="126" y="805" font-size="14" font-weight="600" letter-spacing="1" fill="#04121C">SOL &#183; 70%</text>
+    <text x="594" y="805" font-size="14" font-weight="600" letter-spacing="1" fill="#04121C">NVDAX &#183; 30%</text>
+  </g>
+
+  <text x="110" y="872" font-family="Segoe UI, Arial, sans-serif" font-size="15" letter-spacing="1.5"
+        fill="#7E879B">100% OF VERIFIED CREATOR FEES FLOW THROUGH THE PROTOCOL</text>
+
+  <rect x="1210" y="140" width="300" height="62" rx="31" fill="#FFFFFF" fill-opacity="0.05" stroke="#9945FF" stroke-opacity="0.6" stroke-width="1.5"/>
+  <text x="1360" y="178" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="4" fill="#EAF0FF">CREATOR FEES</text>
+
+  <line x1="1360" y1="206" x2="1360" y2="392" stroke="url(#flowline)" stroke-width="2.5"/>
+  <polygon points="1351,392 1369,392 1360,406" fill="#00D1FF"/>
+  <g fill="#14F195">
+    <circle cx="1360" cy="250" r="4" opacity="0.9"/>
+    <circle cx="1360" cy="295" r="3.5" opacity="0.65"/>
+    <circle cx="1360" cy="340" r="3" opacity="0.4"/>
+  </g>
+
+  <circle cx="1360" cy="520" r="158" fill="#FFFFFF" fill-opacity="0.02"/>
+  <circle cx="1360" cy="520" r="158" fill="none" stroke="#14F195" stroke-opacity="0.22" stroke-width="1.5"/>
+  <circle cx="1360" cy="520" r="180" fill="none" stroke="#9945FF" stroke-opacity="0.30" stroke-width="1.5" stroke-dasharray="5 12"/>
+  <circle cx="1360" cy="520" r="140" fill="none" stroke="url(#headline)" stroke-opacity="0.55" stroke-width="2"
+          stroke-dasharray="220 660" transform="rotate(-115 1360 520)"/>
+  <circle cx="1360" cy="362" r="5" fill="#00D1FF"/>
+  <circle cx="1450" cy="675.9" r="4" fill="#9945FF"/>
+  <image href="{{ICON}}" x="1250" y="410" width="220" height="220"/>
+  <text x="1360" y="725" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" letter-spacing="6" fill="#7E879B">REWARD ENGINE</text>
+
+  <path d="M 1290 660 C 1180 724, 1090 660, 1090 724" fill="none" stroke="#00D1FF" stroke-opacity="0.55" stroke-width="2"/>
+  <path d="M 1430 660 C 1540 724, 1630 660, 1630 724" fill="none" stroke="#14F195" stroke-opacity="0.55" stroke-width="2"/>
+  <g fill="#00D1FF">
+    <circle cx="1226" cy="694" r="4" opacity="0.85"/>
+    <circle cx="1160" cy="690" r="3.5" opacity="0.55"/>
+    <circle cx="1104" cy="672" r="3" opacity="0.35"/>
+  </g>
+  <g fill="#14F195">
+    <circle cx="1494" cy="694" r="4" opacity="0.85"/>
+    <circle cx="1560" cy="690" r="3.5" opacity="0.55"/>
+    <circle cx="1616" cy="672" r="3" opacity="0.35"/>
+  </g>
+
+  <circle cx="1090" cy="790" r="62" fill="#0B0F1E" stroke="#00D1FF" stroke-opacity="0.55" stroke-width="2"/>
+  <circle cx="1090" cy="790" r="72" fill="none" stroke="#00D1FF" stroke-opacity="0.15" stroke-width="1"/>
+  <image href="{{SOLLOGO}}" x="1053" y="753" width="{{SOLW}}" height="{{SOLH}}"/>
+  <text x="1090" y="898" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="3" fill="#EAF0FF">SOL</text>
+  <text x="1090" y="924" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" letter-spacing="2" fill="#7E879B">70% OF REWARD POOL</text>
+
+  <circle cx="1630" cy="790" r="62" fill="#0B0F1E" stroke="#14F195" stroke-opacity="0.55" stroke-width="2"/>
+  <circle cx="1630" cy="790" r="72" fill="none" stroke="#14F195" stroke-opacity="0.15" stroke-width="1"/>
+  <image href="{{NVDAX}}" x="1598" y="758" width="64" height="64"/>
+  <text x="1630" y="898" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="3" fill="#EAF0FF">NVDAX</text>
+  <text x="1630" y="924" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" letter-spacing="2" fill="#7E879B">30% OF REWARD POOL</text>
+
+  <path d="M 1090 866 C 1090 920, 1230 930, 1288 950" fill="none" stroke="#00D1FF" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M 1630 866 C 1630 920, 1490 930, 1432 950" fill="none" stroke="#14F195" stroke-opacity="0.5" stroke-width="2"/>
+  <g fill="#00D1FF">
+    <circle cx="1090" cy="900" r="3.5" opacity="0.8"/>
+    <circle cx="1150" cy="934" r="3" opacity="0.5"/>
+  </g>
+  <g fill="#14F195">
+    <circle cx="1630" cy="900" r="3.5" opacity="0.8"/>
+    <circle cx="1570" cy="934" r="3" opacity="0.5"/>
+  </g>
+
+  <rect x="1200" y="954" width="320" height="66" rx="33" fill="#9945FF" fill-opacity="0.16" stroke="#9945FF" stroke-opacity="0.8" stroke-width="2"/>
+  <text x="1360" y="996" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="6" fill="#FFFFFF">STAKERS</text>
+
+
+
+</svg>
